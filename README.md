@@ -1,4 +1,4 @@
-# MHM-Simple-Calculator
+# Android-Calculator
 A simple calculator for android
 
 # Preview
