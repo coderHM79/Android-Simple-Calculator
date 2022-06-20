@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="30"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_phrase"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="30"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:gravity="center_vertical|end"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_display"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="40"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:gravity="bottom|right"
+            android:padding="5dp"
+            android:text="0"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="60"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:paddingTop="35dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="c"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_clear_display"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="CE"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_negative"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="+/-"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:contentDescription="delete"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp"
+                app:icon="@drawable/ic_delete"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="35dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="2"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_division"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:contentDescription="division"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp"
+                app:icon="@drawable/ic_division"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="4"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="6"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_multiplication"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="x"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="7"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="8"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="9"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_submission"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="-"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/btn_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_dot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#FFFFFF"
+                android:contentDescription="dot"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp"
+                app:icon="@drawable/ic_dot"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="15dp"
+                app:iconTint="#000000" />
+
+            <Button
+                android:id="@+id/btn_equal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="="
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_sum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:backgroundTint="#000000"
+                android:fontFamily="@font/montserrat_alternates_regular"
+                android:text="+"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
