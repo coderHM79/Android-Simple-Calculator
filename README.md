@@ -1,4 +1,4 @@
-# Android-Calculator
+# Android Simple Calculator
 A simple calculator for android
 
 # Preview
