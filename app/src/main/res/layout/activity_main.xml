@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="100"
-    android:background="#CACACA"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -33,10 +33,10 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:layout_height="2dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            android:background="#E6E6E6" />
+            android:background="@color/black" />
 
 
         <TextView
