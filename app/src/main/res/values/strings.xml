@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">MHM Calculator</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+
+    <string name="equal">=</string>
+    <string name="sum">+</string>
+    <string name="subtraction">-</string>
+    <string name="multiplication">X</string>
+    <string name="division">division</string>
+    <string name="delete">delete</string>
+    <string name="dot">dot</string>
+    <string name="c">C</string>
+    <string name="ce">CE</string>
+    <string name="negativeOrPositive">+/-</string>
+
 </resources>
